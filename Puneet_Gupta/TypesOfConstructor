@@ -1,0 +1,26 @@
+package com.code1;
+class intro{
+    String name;int age;
+
+//    Parameterized Constructor
+
+    public intro(){
+        name="Ashish";
+        age=20;
+        System.out.println("Name : "+name+" , "+" Age : "+age);
+    }
+
+    //    Non-Parameterized Constructor
+
+    public intro(String name,int age){
+        this.name=name;
+        this.age=age;
+        System.out.println("Name : "+name+" , "+" Age : "+age);
+    }
+}
+public class typeOfConstructor {
+    public static void main(String[] args) {
+        intro i1=new intro();
+        intro i2=new intro("Neha",22);
+    }
+}
