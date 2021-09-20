@@ -1,0 +1,25 @@
+package typesOfInheritance;
+
+class X{
+    int p,q;
+    public void display(int p,int q){
+        this.p=p;
+        this.q=q;
+        System.out.println("P : "+p+" Q : "+q);
+    }
+}
+class Y extends X{
+    int r;
+    public void show(int p,int q,int r) {
+        this.r = r;
+        System.out.println("P : " + p + ", Q : " + q + ", R : " + r);
+    }
+}
+public class single_Inheritance {
+    public static void main(String[] args) {
+        Y obj=new Y();
+        obj.show(6,9,3);
+    }
+}
+
+
