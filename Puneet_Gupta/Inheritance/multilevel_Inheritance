@@ -1,0 +1,31 @@
+package typesOfInheritance;
+
+class x{
+    int p,q;
+    public void display(int p,int q){
+        this.p=p;
+        this.q=q;
+        System.out.println("P : "+p+" Q : "+q);
+    }
+}
+class y extends x {
+    int r;
+    public void show(int p,int q,int r) {
+        this.r = r;
+        System.out.println("P : " + p + ", Q : " + q + ", R : " + r);
+    }
+}
+class z extends Y {
+    int s;
+    public void show(int p,int q,int r,int s) {
+        this.s = s;
+        System.out.println("P : " + p + ", Q : " + q + ", R : " + r+", S : "+s);
+    }
+}
+
+public class multilevel_Inheritance {
+    public static void main(String[] args) {
+        z obj=new z();
+        obj.show(6,9,3,5);
+    }
+}
