@@ -1,0 +1,22 @@
+class Main{
+    public void sum()
+    {
+        System.out.println("Default sum is zero");
+    }
+    public void sum(int x, int y)
+    {
+        System.out.println("sum of both int value is"+(x+y));
+    }
+    public void sum(float x, float y)
+    {
+        System.out.println("sum of both float value is"+(x+y));
+    }
+    public static void main (String args[])
+    {
+        Main obj = new Main();
+        obj.sum();
+        obj.sum(15,25);
+        obj.sum(12.6f,15.5f);
+        obj.sum();
+    }
+}
