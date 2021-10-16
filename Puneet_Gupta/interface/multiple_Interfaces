@@ -1,0 +1,25 @@
+interface area{
+    double Area(double a);
+}
+interface properties{
+    void prop();
+}
+class square implements area,properties{
+
+    @Override
+    public double Area(double a) {
+        return (Math.pow(a,2));
+    }
+    @Override
+    public void prop() {
+        System.out.println("\nThe opposite sides of a square are parallel to each other.");
+        System.out.println("The diagonals bisect each other at an angle of 90°.");
+    }
+}
+public class multipleInterfaces {
+    public static void main(String[] args) {
+        square s=new square();
+        s.prop();
+        System.out.println("\nArea of the Square : "+s.Area(2.5));
+    }
+}

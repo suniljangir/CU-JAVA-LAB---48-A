@@ -1,0 +1,9 @@
+import java.io.File;
+
+public class deleteFile {
+    public static void main(String[] args) {
+        File f=new File("birdsFact.txt");
+        f.delete();
+        System.out.println(f.getName()+" file deleted successfully.");
+    }
+}
