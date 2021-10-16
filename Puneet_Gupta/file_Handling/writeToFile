@@ -1,0 +1,8 @@
+import java.io.*;
+public class writeToFile {
+    public static void main(String[] args) throws IOException {
+        FileWriter fw=new FileWriter("birdsFact.txt");
+        fw.write("A bird’s heart beats 400 times per minute while resting and up to 1000 beats per minute while flying."+"\uD83D\uDE32");
+        fw.close();
+    }
+}
