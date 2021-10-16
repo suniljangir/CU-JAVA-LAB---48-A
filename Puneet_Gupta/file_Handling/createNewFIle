@@ -1,0 +1,14 @@
+import java.io.*;
+
+public class createNewFIle {
+    public static void main(String[] args) throws IOException {
+        File f=new File("birdsFact.txt");
+        System.out.println(f.exists());
+        if(f.createNewFile())
+            System.out.println(f.getName()+" file is created successfully.");
+        else
+            System.out.println(f.getName()+" file is already exists.");
+        System.out.println(f.exists());
+    }
+
+}
