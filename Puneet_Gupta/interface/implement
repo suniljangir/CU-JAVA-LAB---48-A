@@ -1,0 +1,43 @@
+import java.util.Scanner;
+interface calculation{
+    public void area();
+    public void perimeter();
+}
+class circle implements calculation{
+    Scanner sc=new Scanner(System.in);
+    public void area() {
+        System.out.print("Input the radius of the circle : ");
+        int r= sc.nextInt();
+        System.out.println("Area of the circle : "+(3.14*Math.pow(r,2)));
+    }
+    public void perimeter(){
+        System.out.print("Input the radius of the circle : ");
+        int r= sc.nextInt();
+        System.out.println("Perimeter of the circle : "+(2*3.14*r));
+    }
+}
+class rectangle implements calculation{
+    Scanner sc=new Scanner(System.in);
+    public void area() {
+        System.out.print("Input the length and breadth of the rectangle : ");
+        int l=sc.nextInt();
+        int b=sc.nextInt();
+        System.out.println("Area of the  rectangle : "+(l*b));
+    }
+    public void perimeter(){
+        System.out.print("Input the length and breadth of the rectangle : ");
+        int l=sc.nextInt();
+        int b=sc.nextInt();
+        System.out.println("Perimeter of the rectangle : "+2*(l+b));
+    }
+}
+public class Interface {
+    public static void main(String[] args) {
+        circle c = new circle();
+        rectangle r=new rectangle();
+        c.area();
+        c.perimeter();
+        r.area();
+        r.perimeter();
+    }
+}
